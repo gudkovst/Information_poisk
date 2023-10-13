@@ -1,0 +1,37 @@
+<html> <head>
+<title> Form for show structure and data of tables
+</title> </head> <body>
+
+<form action="2.php" method="GET">
+
+<table>
+    <tr>
+        <td>Tables</td>
+        <td align="right">Show</td>
+    </tr>
+    <tr>
+        <td></td>
+        <td>Structure</td>
+        <td>Content</td>
+    </tr>
+    <tr>
+        <td>Sallers</td>
+        <td align="center"><input type="checkbox" name="structure[]" value="sal"></td>
+        <td align="center"><input type="checkbox" name="content[]" value="sal"></td>
+    </tr>
+    <tr>
+        <td>Customers</td>
+        <td align="center"><input type="checkbox" name="structure[]" value="cust"></td>
+        <td align="center"><input type="checkbox" name="content[]" value="cust"></td>
+    </tr>
+    <tr>
+        <td>Orders</td>
+        <td align="center"><input type="checkbox" name="structure[]" value="ord"></td>
+        <td align="center"><input type="checkbox" name="content[]" value="ord"></td>
+    </tr>
+</table>
+
+<p><input type="submit" value="show">
+
+</form>
+</body> </html>
