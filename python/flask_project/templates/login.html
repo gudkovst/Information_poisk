@@ -2,11 +2,12 @@
 <html>
 <head>
     <meta charset="utf-8" />
-    <title>Create Student</title>
+    <title>Login</title>
 </head>
 <body>
-    <h1>Student</h1>
+    <h1>Login</h1>
     <form method="POST">
+    <a href="/registration/">Зарегистрироваться</a>
     <table>
         {% for field in form %}
             <tr>
@@ -16,5 +17,6 @@
         {% endfor %}
     </table>
     <input type="submit" value="Enter">
+    <input type="hidden" value="{{ request }}">
 </body>
 </html>
