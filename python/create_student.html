@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>Create Student</title>
+</head>
+<body>
+    <h1>Student</h1>
+    <form method="POST">
+    <table>
+        {% for field in form %}
+            <tr>
+                <th>{{ field.label }}</th>
+                <td>{{ field }}</td>
+            </tr>
+        {% endfor %}
+    </table>
+    <input type="submit" value="Enter">
+</body>
+</html>
